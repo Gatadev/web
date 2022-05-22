@@ -134,30 +134,30 @@ nav .enlaces a:hover {
   color: #fff;
 }
 
-.presentacion {
-  padding: 40px;
+.pantallaerror {
+  padding: 40px 0px 0px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.presentacion h2 {
-  font-weight: 200;
-  font-size: 42px;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
-}
-
-.presentacion h1 {
+.pantallaerror h1 {
   font-size: 55px;
   letter-spacing: 2px;
   white-space: nowrap;
   display: block;
   border-right: 4px solid;
-  width: 6.5ch;
+  width: 5.5ch;
   font-family: monospace;
-  -webkit-animation: typing 3s steps(6, end), blink 0.75s step-end infinite;
-          animation: typing 3s steps(6, end), blink 0.75s step-end infinite;
+  -webkit-animation: typing 3s steps(5, end), blink 0.75s step-end infinite;
+          animation: typing 3s steps(5, end), blink 0.75s step-end infinite;
   overflow: hidden;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
 }
 
 @-webkit-keyframes typing {
@@ -184,28 +184,28 @@ nav .enlaces a:hover {
   }
 }
 
-.presentacion p {
-  font-size: 20px;
-  margin-bottom: 30px;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+body.dark .pantallaerror {
+  color: #ffffff;
 }
 
-.presentacion .sobremi {
+.extra {
   font-size: 15px;
   margin: 18px 0;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
-}
-
-body.dark .presentacion {
-  color: #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .tecnologias h2 {
   font-weight: 200;
   font-size: 42px;
-  padding: 0px 40px 40px 40px;
+  padding: 0px 0px 40px 40px;
 }
 
 body.dark .tecnologias {
@@ -300,45 +300,19 @@ body.dark footer p {
   color: #ffffff;
 }
 
-@media screen and (max-width: 600px) {
-  .presentacion {
-    padding: 20px;
-  }
-  .presentacion h2 {
-    font-size: 28px;
-  }
-  .presentacion h1 {
-    font-size: 35px;
-  }
-  .presentacion p {
-    font-size: 13px;
-  }
-  .presentacion .sobremi {
-    font-size: 10px;
-  }
-  .tecnologias h2 {
-    font-size: 28px;
-    padding: 20px;
-  }
+@media screen and (max-width: 800px) {
   .grid {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     width: 100%;
-    padding: 20px;
-  }
-  nav {
-    font-size: 12px;
-  }
-  nav .enlaces a {
-    margin-right: 20px;
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .grid {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     width: 100%;
   }
 }
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=404.css.map */

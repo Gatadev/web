@@ -6,25 +6,25 @@ $grisClaroHover: #ACABAB;
 $azul: #52A5E0;
 $azulHover: #254BE6;
 
-$sombraDark: 0px 0px 20px 0px rgba(170,170,170,.16);
-$sombraLight: 0px 0px 20px 0px rgba(0,0,0,.16);
+$sombraDark: 0px 0px 20px 0px rgba(170, 170, 170, .16);
+$sombraLight: 0px 0px 20px 0px rgba(0, 0, 0, .16);
 
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 html {
     min-height: 100%;
     position: relative;
-  }
+}
 
 body {
-	background: $blanco;
-	font-family: 'Roboto', sans-serif;
-	transition: .3s ease all;
-    
+    background: $blanco;
+    font-family: 'Roboto', sans-serif;
+    transition: .3s ease all;
+
 
     &.dark {
         background: $negro;
@@ -33,53 +33,57 @@ body {
 }
 
 a {
-	color: $grisOscuro;
-	text-decoration: none;
-	font-weight: 500;
+    color: $grisOscuro;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 .contenedor {
-	width: 100%;
-	margin: auto;
-	
+    width: 100%;
+    margin: auto;
+
 }
 
 // ----- ----- ----- ----- ----- HEADER ----- ----- ----- ----- ----- 
 nav {
-	background: $blanco;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 15px 20px;
-	transition: .3s ease all;
-	box-shadow: $sombraDark;
+    background: $blanco;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    transition: .3s ease all;
+    box-shadow: $sombraDark;
 
     body.dark & {
         background: $grisOscuro;
         box-shadow: $sombraLight;
+
         a {
             color: $blanco;
+
             &:hover {
                 color: $grisClaroHover;
             }
         }
     }
 
-	.logotipo {
-		font-weight: 700;
-		font-family: 'Roboto', sans-serif;
-	}
+    .logotipo {
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+    }
 
-	.enlaces {
-		display: flex;
-		align-items: center;
-		a {
-			margin-right: 40px;
-			&:hover {
-				color: #707070;
-			}
-		}
-	}
+    .enlaces {
+        display: flex;
+        align-items: center;
+
+        a {
+            margin-right: 40px;
+
+            &:hover {
+                color: #707070;
+            }
+        }
+    }
 }
 
 // ----- ----- ----- ----- ----- Switch ----- ----- ----- ----- ----- 
@@ -92,6 +96,7 @@ nav {
     cursor: pointer;
     display: flex;
     outline: none;
+
     &::after {
         content: "";
         display: block;
@@ -104,16 +109,19 @@ nav {
         right: unset;
         border-radius: 100px;
         transition: .3s ease all;
-        box-shadow: 0px 0px 2px 2px rgba(0,0,0,.2);
+        box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
     }
+
     &.active {
         background: orange;
         color: black;
+
         &::after {
-             right: 0;
-             left: unset;
+            right: 0;
+            left: unset;
         }
     }
+
     span {
         width: 30px;
         height: 30px;
@@ -127,14 +135,15 @@ nav {
 
 .presentacion {
     padding: 40px;
-    
+
     h2 {
         font-weight: 200;
         font-size: 42px;
-       
+        transition: .3s ease all;
+
     }
 
-  
+
 
 
     h1 {
@@ -148,96 +157,103 @@ nav {
 
         animation: typing 3s steps(6, end), blink .75s step-end infinite;
         overflow: hidden;
+        transition: .3s ease all;
     }
-    
-  @keyframes typing {
-        from { width: 0; }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
     }
 
 
     @keyframes blink {
-        50% { border-color: transparent; }
+        50% {
+            border-color: transparent;
+        }
     }
 
 
     p {
         font-size: 20px;
         margin-bottom: 30px;
+        transition: .3s ease all;
     }
 
 
     .sobremi {
         font-size: 15px;
         margin: 18px 0;
+        transition: .3s ease all;
     }
 
-   body.dark & {
-   color: $blanco; 
-   
+    body.dark & {
+        color: $blanco;
 
-   }
+
+    }
 
 }
 
 .tecnologias {
 
-    h2{
+    h2 {
         font-weight: 200;
         font-size: 42px;
-        padding: 0px 0px 40px 40px;
-        
+        padding: 0px 40px 40px 40px;
+
     }
 
     body.dark & {
-        color: $blanco; 
-        
-     
-        }
+        color: $blanco;
+
+
+    }
 
 }
 
 .grid {
-	display: grid;
-	grid-gap: 40px 20px;
-	grid-template-columns: 1fr 1fr 1fr;
-	padding: 0px 40px;
+    display: grid;
+    grid-gap: 40px 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0px 40px;
     margin-bottom: 100px;
-  
-   
-    
-	.icon {
-		background: $blanco;
-		padding: 20px;
-		border-radius: 10px;
-		box-shadow: $sombraDark;
-		display: flex;
-		align-items: center;
+
+
+
+    .icon {
+        background: $blanco;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: $sombraDark;
+        display: flex;
+        align-items: center;
         gap: 12px;
-		line-height: 24px;
-		height: 90px;
-		transition: .3s ease all;
-        
+        line-height: 24px;
+        height: 90px;
+        transition: .3s ease all;
+
         &:hover {
-          box-shadow: $sombraLight; 
+            box-shadow: $sombraLight;
         }
-	
+
         body.dark & {
             background: $grisOscuro;
             box-shadow: $sombraLight;
-         
-            }
-    
 
-		img {
-         
-			width: 50px;
+        }
+
+
+        img {
+
+            width: 50px;
             height: 50px;
-		   
-            
-			
-		}
 
-       
+
+
+        }
+
+
 
         p {
             font-family: 'Roboto', sans-serif;
@@ -245,17 +261,17 @@ nav {
             font-size: 16px;
 
             body.dark & {
-                color: $blanco; 
-                
-             
-                }
+                color: $blanco;
+
+
+            }
 
         }
-	
-	
 
-        
-	}
+
+
+
+    }
 }
 
 // ----- ----- ----- ----- ----- GRID ----- ----- ----- ----- ----- 
@@ -263,18 +279,18 @@ nav {
 // footer
 
 footer {
-  background: $blanco;
-  position: absolute;
-  font-family: 'Roboto', sans-serif;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  padding: 15px 20px;
-  transition: .3s ease all;
-  box-shadow: $sombraDark;
+    background: $blanco;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 15px 20px;
+    transition: .3s ease all;
+    box-shadow: $sombraDark;
 
     body.dark & {
         background: $grisOscuro;
@@ -292,23 +308,75 @@ footer {
 }
 
 
-@media screen and (max-width: 800px) {
-   
+@media screen and (max-width: 600px) {
+
+
+  
+    .presentacion {
+        padding:20px;
+
+        h2 {
+            font-size: 28px;
+        }
+
+       h1 {
+           font-size: 35px;
+       }
+
+       p {
+        font-size: 13px;
+    }
+
+    .sobremi{
+        font-size: 10px;
+    }
+
+    }
+
+   .tecnologias {
+       h2 {
+              font-size: 28px;
+              padding: 20px;
+       }
+   }
 
 
     .grid {
         grid-template-columns: 1fr 1fr;
         width: 100%;
+        padding: 20px;
     }
+
+    nav {
+        font-size: 12px;
+
+
+
+        .enlaces {
+            a {
+                margin-right: 20px;
+            }
+
+        }
+
+
+    }
+
 }
 
-@media screen and (max-width: 500px) {
-   
+
+
+
+@media screen and (max-width: 450px) {
+
 
 
     .grid {
         grid-template-columns: 1fr;
         width: 100%;
     }
+
+
+
+
 }
-    
