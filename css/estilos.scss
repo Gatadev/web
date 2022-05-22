@@ -1,6 +1,6 @@
-$negro: #111111;
+$negro: #23272A;
 $blanco: #ffffff;
-$grisOscuro: #222222;
+$grisOscuro: #2C2F33;
 $grisClaro: #C8C8C8;
 $grisClaroHover: #ACABAB;
 $azul: #52A5E0;
@@ -80,7 +80,7 @@ nav {
             margin-right: 40px;
 
             &:hover {
-                color: #707070;
+                color: $grisClaroHover;
             }
         }
     }
@@ -240,6 +240,11 @@ nav {
         body.dark & {
             background: $grisOscuro;
             box-shadow: $sombraLight;
+
+
+            &:hover {
+                box-shadow: 0px 0px 20px 0px rgba(38, 38, 38, 0.16);;
+            }
 
         }
 
