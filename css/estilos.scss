@@ -1,0 +1,314 @@
+$negro: #111111;
+$blanco: #ffffff;
+$grisOscuro: #222222;
+$grisClaro: #C8C8C8;
+$grisClaroHover: #ACABAB;
+$azul: #52A5E0;
+$azulHover: #254BE6;
+
+$sombraDark: 0px 0px 20px 0px rgba(170,170,170,.16);
+$sombraLight: 0px 0px 20px 0px rgba(0,0,0,.16);
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+  }
+
+body {
+	background: $blanco;
+	font-family: 'Roboto', sans-serif;
+	transition: .3s ease all;
+    
+
+    &.dark {
+        background: $negro;
+    }
+
+}
+
+a {
+	color: $grisOscuro;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.contenedor {
+	width: 100%;
+	margin: auto;
+	
+}
+
+// ----- ----- ----- ----- ----- HEADER ----- ----- ----- ----- ----- 
+nav {
+	background: $blanco;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 20px;
+	transition: .3s ease all;
+	box-shadow: $sombraDark;
+
+    body.dark & {
+        background: $grisOscuro;
+        box-shadow: $sombraLight;
+        a {
+            color: $blanco;
+            &:hover {
+                color: $grisClaroHover;
+            }
+        }
+    }
+
+	.logotipo {
+		font-weight: 700;
+		font-family: 'Roboto', sans-serif;
+	}
+
+	.enlaces {
+		display: flex;
+		align-items: center;
+		a {
+			margin-right: 40px;
+			&:hover {
+				color: #707070;
+			}
+		}
+	}
+}
+
+// ----- ----- ----- ----- ----- Switch ----- ----- ----- ----- ----- 
+
+.switch {
+    background: #343D5B;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    &::after {
+        content: "";
+        display: block;
+        width: 50%;
+        height: 30px;
+        position: absolute;
+        background: #F1F1F1;
+        top: 0;
+        left: 0;
+        right: unset;
+        border-radius: 100px;
+        transition: .3s ease all;
+        box-shadow: 0px 0px 2px 2px rgba(0,0,0,.2);
+    }
+    &.active {
+        background: orange;
+        color: black;
+        &::after {
+             right: 0;
+             left: unset;
+        }
+    }
+    span {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        display: block;
+        background: none;
+        color: #fff;
+    }
+}
+
+
+.presentacion {
+    padding: 40px;
+    
+    h2 {
+        font-weight: 200;
+        font-size: 42px;
+       
+    }
+
+  
+
+
+    h1 {
+        font-size: 55px;
+        letter-spacing: 2px;
+        white-space: nowrap;
+        display: block;
+        border-right: 4px solid;
+        width: 12ch;
+        font-family: monospace;
+
+        animation: typing 3s steps(11, end), blink .75s step-end infinite;
+        overflow: hidden;
+    }
+    
+  @keyframes typing {
+        from { width: 0; }
+    }
+
+
+    @keyframes blink {
+        50% { border-color: transparent; }
+    }
+
+
+    p {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+
+    .sobremi {
+        font-size: 15px;
+        margin: 18px 0;
+    }
+
+   body.dark & {
+   color: $blanco; 
+   
+
+   }
+
+}
+
+.tecnologias {
+
+    h2{
+        font-weight: 200;
+        font-size: 42px;
+        padding: 0px 0px 40px 40px;
+        
+    }
+
+    body.dark & {
+        color: $blanco; 
+        
+     
+        }
+
+}
+
+.grid {
+	display: grid;
+	grid-gap: 40px 20px;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 0px 40px;
+    margin-bottom: 100px;
+  
+   
+    
+	.icon {
+		background: $blanco;
+		padding: 20px;
+		border-radius: 10px;
+		box-shadow: $sombraDark;
+		display: flex;
+		align-items: center;
+        gap: 12px;
+		line-height: 24px;
+		height: 90px;
+		transition: .3s ease all;
+        
+        &:hover {
+          box-shadow: $sombraLight; 
+        }
+	
+        body.dark & {
+            background: $grisOscuro;
+            box-shadow: $sombraLight;
+         
+            }
+    
+
+		img {
+         
+			width: 50px;
+            height: 50px;
+		   
+            
+			
+		}
+
+       
+
+        p {
+            font-family: 'Roboto', sans-serif;
+            display: block;
+            font-size: 16px;
+
+            body.dark & {
+                color: $blanco; 
+                
+             
+                }
+
+        }
+	
+	
+
+        
+	}
+}
+
+// ----- ----- ----- ----- ----- GRID ----- ----- ----- ----- ----- 
+
+// footer
+
+footer {
+  background: $blanco;
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 15px 20px;
+  transition: .3s ease all;
+  box-shadow: $sombraDark;
+
+    body.dark & {
+        background: $grisOscuro;
+        box-shadow: $sombraLight;
+
+        p {
+            color: $blanco;
+        }
+
+
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 800px) {
+   
+
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+   
+
+
+    .grid {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+}
+    
