@@ -318,7 +318,7 @@ body.dark footer p {
   }
   .presentacion h1 {
     font-size: 41px;
-    width: 7ch;
+    width: 6.6ch;
     -webkit-animation: typing 3s steps(6, end), blink 0.75s step-end infinite;
             animation: typing 3s steps(6, end), blink 0.75s step-end infinite;
   }
