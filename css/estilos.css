@@ -301,14 +301,23 @@ body.dark footer p {
 }
 
 @media screen and (max-width: 600px) {
+  .switch::after {
+    width: 50%;
+    height: 20px;
+  }
+  .switch span {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+  }
   .presentacion {
     padding: 20px;
   }
   .presentacion h2 {
-    font-size: 28px;
+    font-size: 34px;
   }
   .presentacion h1 {
-    font-size: 35px;
+    font-size: 41px;
     width: 7ch;
     -webkit-animation: typing 3s steps(6, end), blink 0.75s step-end infinite;
             animation: typing 3s steps(6, end), blink 0.75s step-end infinite;
@@ -317,10 +326,10 @@ body.dark footer p {
     font-size: 13px;
   }
   .presentacion .sobremi {
-    font-size: 12px;
+    font-size: 15px;
   }
   .tecnologias h2 {
-    font-size: 28px;
+    font-size: 25px;
     padding: 20px;
   }
   .grid {
