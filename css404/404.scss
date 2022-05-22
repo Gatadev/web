@@ -54,19 +54,6 @@ nav {
     transition: .3s ease all;
     box-shadow: $sombraDark;
 
-    body.dark & {
-        background: $grisOscuro;
-        box-shadow: $sombraLight;
-
-        a {
-            color: $blanco;
-
-            &:hover {
-                color: $azul;
-            }
-        }
-    }
-
     .logotipo {
         font-weight: 700;
         font-family: 'Roboto', sans-serif;
@@ -82,6 +69,15 @@ nav {
             &:hover {
                 color: $azul;
             }
+        }
+    }
+
+    body.dark & {
+        background: $grisOscuro;
+        box-shadow: $sombraLight;
+
+        a {
+            color: $blanco;
         }
     }
 }

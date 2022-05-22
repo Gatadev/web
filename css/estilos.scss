@@ -54,19 +54,6 @@ nav {
     transition: .3s ease all;
     box-shadow: $sombraDark;
 
-    body.dark & {
-        background: $grisOscuro;
-        box-shadow: $sombraLight;
-
-        a {
-            color: $blanco;
-
-            &:hover {
-                color: $azul;
-            }
-        }
-    }
-
     .logotipo {
         font-weight: 700;
         font-family: 'Roboto', sans-serif;
@@ -84,6 +71,16 @@ nav {
             }
         }
     }
+
+    body.dark & {
+        background: $grisOscuro;
+        box-shadow: $sombraLight;
+
+        a {
+            color: $blanco;
+        }
+    }
+
 }
 
 // ----- ----- ----- ----- ----- Switch ----- ----- ----- ----- ----- 
@@ -237,17 +234,7 @@ nav {
             box-shadow: $sombraLight;
         }
 
-        body.dark & {
-            background: $grisOscuro;
-            box-shadow: $sombraLight;
-
-
-            &:hover {
-                box-shadow: 0px 0px 20px 0px rgba(38, 38, 38, 0.16);
-                ;
-            }
-
-        }
+       
 
 
         img {
@@ -274,7 +261,17 @@ nav {
 
         }
 
+        body.dark & {
+            background: $grisOscuro;
+            box-shadow: $sombraLight;
 
+
+            &:hover {
+                box-shadow: 0px 0px 20px 0px rgba(38, 38, 38, 0.16);
+                
+            }
+
+        }
 
 
     }

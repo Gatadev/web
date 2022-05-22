@@ -50,20 +50,6 @@ nav {
           box-shadow: 0px 0px 20px 0px rgba(170, 170, 170, 0.16);
 }
 
-body.dark nav {
-  background: #2f2f2f;
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.16);
-}
-
-body.dark nav a {
-  color: #ffffff;
-}
-
-body.dark nav a:hover {
-  color: #52A5E0;
-}
-
 nav .logotipo {
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
@@ -84,6 +70,16 @@ nav .enlaces a {
 
 nav .enlaces a:hover {
   color: #52A5E0;
+}
+
+body.dark nav {
+  background: #2f2f2f;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.16);
+}
+
+body.dark nav a {
+  color: #ffffff;
 }
 
 .switch {
