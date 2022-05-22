@@ -143,10 +143,10 @@ nav {
         white-space: nowrap;
         display: block;
         border-right: 4px solid;
-        width: 12ch;
+        width: 6.5ch;
         font-family: monospace;
 
-        animation: typing 3s steps(11, end), blink .75s step-end infinite;
+        animation: typing 3s steps(6, end), blink .75s step-end infinite;
         overflow: hidden;
     }
     
