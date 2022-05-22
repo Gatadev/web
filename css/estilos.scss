@@ -321,6 +321,8 @@ footer {
 
        h1 {
            font-size: 35px;
+           width: 7ch;
+          animation: typing 3s steps(6, end), blink .75s step-end infinite;
        }
 
        p {
@@ -328,7 +330,7 @@ footer {
     }
 
     .sobremi{
-        font-size: 10px;
+        font-size: 12px;
     }
 
     }

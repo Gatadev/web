@@ -309,12 +309,15 @@ body.dark footer p {
   }
   .presentacion h1 {
     font-size: 35px;
+    width: 7ch;
+    -webkit-animation: typing 3s steps(6, end), blink 0.75s step-end infinite;
+            animation: typing 3s steps(6, end), blink 0.75s step-end infinite;
   }
   .presentacion p {
     font-size: 13px;
   }
   .presentacion .sobremi {
-    font-size: 10px;
+    font-size: 12px;
   }
   .tecnologias h2 {
     font-size: 28px;
