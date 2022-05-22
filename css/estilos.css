@@ -344,6 +344,9 @@ body.dark footer p {
   nav .enlaces a {
     margin-right: 20px;
   }
+  footer p {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 450px) {

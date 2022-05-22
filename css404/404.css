@@ -300,15 +300,45 @@ body.dark footer p {
   color: #ffffff;
 }
 
-@media screen and (max-width: 800px) {
-  .grid {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    width: 100%;
+@media screen and (max-width: 600px) {
+  .switch::after {
+    width: 50%;
+    height: 20px;
+  }
+  .switch span {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+  }
+  .pantallaerror {
+    padding: 20px 20px 0px 20px;
+  }
+  .pantallaerror h1 {
+    font-size: 41px;
+    width: 5.6ch;
+    -webkit-animation: typing 3s steps(5, end), blink 0.75s step-end infinite;
+            animation: typing 3s steps(5, end), blink 0.75s step-end infinite;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+  }
+  .extra p {
+    font-size: 10px;
+    padding: 0px 20px 0px 20px;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+  }
+  nav {
+    font-size: 12px;
+  }
+  nav .enlaces a {
+    margin-right: 20px;
+  }
+  footer p {
+    font-size: 12px;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 450px) {
   .grid {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
