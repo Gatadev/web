@@ -1,7 +1,2 @@
-ErrorDocument 404 https://gatadevportafolio.netlify.app/404.php
-
 RewriteEngine On
-RewriteBase /
-
-RewriteCond %{REQUEST_URI} ^/404/$
-RewriteRule ^(.*)$ /pages/errors/404.php [L]
+ErrorDocument 404 /404.html
