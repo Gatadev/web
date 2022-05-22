@@ -18,11 +18,11 @@ body {
 }
 
 body.dark {
-  background: #111111;
+  background: #2b2b2b;
 }
 
 a {
-  color: #222222;
+  color: #2f2f2f;
   text-decoration: none;
   font-weight: 500;
 }
@@ -51,7 +51,7 @@ nav {
 }
 
 body.dark nav {
-  background: #222222;
+  background: #2f2f2f;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.16);
 }
@@ -251,7 +251,7 @@ body.dark .tecnologias {
 }
 
 body.dark .grid .icon {
-  background: #222222;
+  background: #2f2f2f;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.16);
 }
@@ -295,7 +295,7 @@ footer {
 }
 
 body.dark footer {
-  background: #222222;
+  background: #2f2f2f;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.16);
 }
