@@ -1,1 +1,2 @@
-ErrorDocument 404 https://gatadevportafolio.netlify.app/404.php
+ErrorDocument 404 
+https://gatadevportafolio.netlify.app/web/404.php
