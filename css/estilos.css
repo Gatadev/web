@@ -300,7 +300,7 @@ body.dark .proyectos {
 
 .griddos .tarjeta {
   background-color: #ffffff;
-  padding: 1.25rem;
+  padding: 20px;
   line-height: 24px;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(170, 170, 170, 0.16);
           box-shadow: 0px 0px 20px 0px rgba(170, 170, 170, 0.16);
