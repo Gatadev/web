@@ -323,6 +323,7 @@ body.dark & {
            margin: 0px 0px 8px 0px;
            font-family: monospace;
            
+           
        }
 
        .tecnologias {
@@ -468,6 +469,23 @@ footer {
 
 // PAGINA RESPONSIVE ------------------------------------------------------->
 
+@media screen and (max-width: 1080px) {
+
+.griddos {
+    grid-template-columns: 1fr 1fr;
+}
+
+}
+
+@media screen and (max-width: 720px) {
+
+    .griddos {
+        grid-template-columns: 1fr;
+    }
+    
+    }
+
+
 @media screen and (max-width: 600px) {
 
     .switch {
@@ -546,6 +564,16 @@ footer {
 
         
     }
+
+    
+    .griddos {
+        grid-gap: 20px 20px;
+        grid-template-columns: 1fr;
+        padding: 20px;
+    
+    }
+
+
 
     nav {
         font-size: 12px;
