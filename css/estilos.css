@@ -363,6 +363,8 @@ body.dark .proyectos {
   background-color: #fff0f0;
   border-radius: 0.5rem;
   cursor: pointer;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
 }
 
 .griddos .tarjeta:hover {
