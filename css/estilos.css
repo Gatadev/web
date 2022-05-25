@@ -454,7 +454,7 @@ body.dark footer p {
     line-height: 20px;
   }
   .presentacion {
-    padding: 80px 20px 20px 20px;
+    margin: 80px 20px 20px 20px;
   }
   .presentacion h2 {
     font-size: 34px;
@@ -471,15 +471,16 @@ body.dark footer p {
   .presentacion .sobremi {
     font-size: 15px;
   }
+  .tecnologias {
+    margin: 20px;
+  }
   .tecnologias h2 {
     font-size: 25px;
-    padding: 20px;
   }
   .grid {
     grid-gap: 20px 20px;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    padding: 20px;
   }
   .grid .icon {
     padding: 10px;
@@ -493,15 +494,16 @@ body.dark footer p {
     width: 30px;
     height: 30px;
   }
+  .proyectos {
+    margin: 20px;
+  }
   .proyectos h2 {
     font-size: 25px;
-    padding: 20px;
   }
   .griddos {
     grid-gap: 20px 20px;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    padding: 20px;
   }
   nav {
     font-size: 12px;
