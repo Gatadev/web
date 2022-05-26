@@ -237,42 +237,40 @@
 
 	</div>
 
+<h2 class="titulo-random">Feedback</h2>
 
 <div class="formulario-contenedor">
 	
-	<h2>Contacto</h2>
+	
 
-		<form name="formulario-contacto" netlify>
+		<form name="formulario contacto" netlify>
 
 			<label for="nombre">Nombre</label>
-			<input type="text" name="nombre" id="nombre" required>
+			<input type="text" name="nombre" id="nombre" placeholder="Bruce Wayne" required>
 
-			<label for="email">Email</label>
-			<input type="email" name="email" id="email" required>
+			<label for="email">Email </label>
+			<input type="email" name="email" id="email" placeholder="baticorreo@gmail.com (opcional)">
 
 			<label for="mensaje">Mensaje</label>
-			<textarea name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+			<textarea name="mensaje" id="mensaje" cols="30" rows="4" placeholder="Quiero venganza" required></textarea>
 
-			<button type="submit">Send</button>
+			<button type="submit">Enviar</button>
+
+			<div class="contacto">
+				<p>Contacto - Redes</p>
+
+				<a href="#" onclick="copiarAlPortapapeles()" ><img src="imgs/discord-brands.svg"></a>
+				<a href="https://github.com/Gatadev" target="_blank" ><img src="imgs/github-brands.svg"></a>
+			</div>
 
 		</form>
+
+		
 
 </div>
 
 
 
-	<footer>
-
-		<p>
-			&#169;
-			<script>document.write(new Date().getFullYear())</script> - Todos los derechos reservados.
-
-
-		</p>
-
-
-
-	</footer>
 	
 </body>
 
