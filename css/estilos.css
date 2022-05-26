@@ -426,6 +426,7 @@ body.dark .titulo-random {
   width: 500px;
   -webkit-transition: .3s ease all;
   transition: .3s ease all;
+  border-radius: 10px;
 }
 
 .formulario-contenedor form:hover {
@@ -569,6 +570,13 @@ body.dark .formulario-contenedor .contacto img {
 }
 
 @media screen and (max-width: 720px) {
+  .formulario-contenedor {
+    margin: 20px;
+  }
+  .formulario-contenedor form {
+    padding: 25px 25px 0px 25px;
+    width: 100%;
+  }
   .griddos {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;

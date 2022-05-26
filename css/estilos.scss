@@ -453,7 +453,7 @@ nav {
         padding: 40px 40px 0px 40px;
         width: 500px;
         transition: .3s ease all;
-
+        border-radius: 10px;
 
 
         &:hover {
@@ -616,6 +616,16 @@ nav {
 }
 
 @media screen and (max-width: 720px) {
+
+    .formulario-contenedor {
+        margin: 20px;
+
+        form {
+            padding: 25px 25px 0px 25px;
+            width: 100%;
+        }
+        
+    }
 
     .griddos {
         grid-template-columns: 1fr;
