@@ -1,313 +1,258 @@
 $negro: #2b2b2b;
 $blanco: #ffffff;
 $grisOscuro: #2f2f2f;
-$grisClaro: #C8C8C8;
-$grisClaroHover: #ACABAB;
-$azul: #52A5E0;
-$azulHover: #254BE6;
+$grisClaro: #c8c8c8;
+$grisClaroHover: #acabab;
+$azul: #52a5e0;
+$azulHover: #254be6;
 
-$sombraDark: 0px 0px 20px 0px rgba(170, 170, 170, .16);
-$sombraLight: 0px 0px 20px 0px rgba(0, 0, 0, .16);
+$sombraDark: 0px 0px 20px 0px rgba(170, 170, 170, 0.16);
+$sombraLight: 0px 0px 20px 0px rgba(0, 0, 0, 0.16);
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    min-height: 100%;
-    position: relative;
+  min-height: 100%;
+  position: relative;
 }
 
 body {
-    background: $blanco;
-    font-family: 'Roboto', sans-serif;
-    transition: .3s ease all;
+  background: $blanco;
+  font-family: "Roboto", sans-serif;
+  transition: 0.3s ease all;
 
-
-    &.dark {
-        background: $negro;
-    }
-
+  &.dark {
+    background: $negro;
+  }
 }
 
 a {
-    color: $grisOscuro;
-    text-decoration: none;
-    font-weight: 500;
+  color: $grisOscuro;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .contenedor {
-    width: 100%;
-    position: fixed;
-    margin: 0;
-    top: 0;
-
+  width: 100%;
+  position: fixed;
+  margin: 0;
+  top: 0;
 }
 
-// ----- ----- ----- ----- ----- HEADER ----- ----- ----- ----- ----- 
+// ----- ----- ----- ----- ----- HEADER ----- ----- ----- ----- -----
 nav {
-    background: $blanco;
+  background: $blanco;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  transition: 0.3s ease all;
+  box-shadow: $sombraDark;
+
+  .logotipo {
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .enlaces {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
-    transition: .3s ease all;
-    box-shadow: $sombraDark;
 
-    .logotipo {
-        font-weight: 700;
-        font-family: 'Roboto', sans-serif;
+    a {
+      margin-right: 40px;
+
+      &:hover {
+        color: $azul;
+      }
     }
+  }
 
-    .enlaces {
-        display: flex;
-        align-items: center;
+  body.dark & {
+    background: $grisOscuro;
+    box-shadow: $sombraLight;
 
-        a {
-            margin-right: 40px;
-
-            &:hover {
-                color: $azul;
-            }
-        }
+    a {
+      color: $blanco;
     }
-
-    body.dark & {
-        background: $grisOscuro;
-        box-shadow: $sombraLight;
-
-        a {
-            color: $blanco;
-        }
-    }
+  }
 }
 
-// ----- ----- ----- ----- ----- Switch ----- ----- ----- ----- ----- 
+// ----- ----- ----- ----- ----- Switch ----- ----- ----- ----- -----
 
 .switch {
-    background: #343D5B;
-    border-radius: 1000px;
-    border: none;
-    position: relative;
-    cursor: pointer;
-    display: flex;
-    outline: none;
+  background: #343d5b;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 30px;
+    position: absolute;
+    background: #f1f1f1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: 0.3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  &.active {
+    background: orange;
+    color: black;
 
     &::after {
-        content: "";
-        display: block;
-        width: 50%;
-        height: 30px;
-        position: absolute;
-        background: #F1F1F1;
-        top: 0;
-        left: 0;
-        right: unset;
-        border-radius: 100px;
-        transition: .3s ease all;
-        box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+      right: 0;
+      left: unset;
     }
+  }
 
-    &.active {
-        background: orange;
-        color: black;
-
-        &::after {
-            right: 0;
-            left: unset;
-        }
-    }
-
-    span {
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-        display: block;
-        background: none;
-        color: #fff;
-    }
+  span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
+  }
 }
 
-
 .pantallaerror {
-    margin: 80px 0px 0px 0px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+  margin: 80px 0px 0px 0px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 
+  h1 {
+    font-size: 55px;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    display: block;
+    border-right: 4px solid;
+    width: 5.5ch;
+    font-family: monospace;
+    animation: typing 3s steps(5, end), blink 0.75s step-end infinite;
+    overflow: hidden;
+  }
 
-    h1 {
-        font-size: 55px;
-        letter-spacing: 2px;
-        white-space: nowrap;
-        display: block;
-        border-right: 4px solid;
-        width: 5.5ch;
-        font-family: monospace;
-        animation: typing 3s steps(5, end), blink .75s step-end infinite;
-        overflow: hidden;
+  @keyframes typing {
+    from {
+      width: 0;
     }
+  }
 
-    @keyframes typing {
-        from {
-            width: 0;
-        }
+  @keyframes blink {
+    50% {
+      border-color: transparent;
     }
+  }
 
-
-    @keyframes blink {
-        50% {
-            border-color: transparent;
-        }
-    }
-
-
-
-
-
-
-
-    body.dark & {
-        color: $blanco;
-
-
-    }
-
+  body.dark & {
+    color: $blanco;
+  }
 }
 
 .extra {
-    font-size: 15px;
-    margin: 18px 0;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+  font-size: 15px;
+  margin: 18px 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 
-    body.dark & {
-        color: $blanco;
-    }
-
+  body.dark & {
+    color: $blanco;
+  }
 }
 
 // footer
 
 footer {
-    background: $blanco;
-    position: absolute;
-    font-family: 'Roboto', sans-serif;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    padding: 15px 20px;
-    transition: .3s ease all;
-    box-shadow: $sombraDark;
+  background: $blanco;
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 15px 20px;
+  transition: 0.3s ease all;
+  box-shadow: $sombraDark;
 
-    body.dark & {
-        background: $grisOscuro;
-        box-shadow: $sombraLight;
+  body.dark & {
+    background: $grisOscuro;
+    box-shadow: $sombraLight;
 
-        p {
-            color: $blanco;
-        }
-
-
+    p {
+      color: $blanco;
     }
-
-
-
+  }
 }
-
 
 @media screen and (max-width: 600px) {
-
-    .switch {
-
-        &::after {
-
-            width: 50%;
-            height: 20px;
-
-
-
-        }
-
-
-        span {
-            width: 20px;
-            height: 20px;
-            line-height: 20px;
-        }
+  .switch {
+    &::after {
+      width: 50%;
+      height: 20px;
     }
 
-
-    .pantallaerror {
-        padding: 20px 20px 0px 20px;
-
-
-        h1 {
-            font-size: 41px;
-            width: 5.6ch;
-            animation: typing 3s steps(5, end), blink .75s step-end infinite;
-            transition: .3s ease all;
-        }
-
-
-
+    span {
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
     }
+  }
 
-    .extra {
+  .pantallaerror {
+    padding: 20px 20px 0px 20px;
 
-        p {
-            font-size: 10px;
-            padding: 0px 20px 0px 20px;
-            transition: .3s ease all;
-
-        }
+    h1 {
+      font-size: 41px;
+      width: 5.6ch;
+      animation: typing 3s steps(5, end), blink 0.75s step-end infinite;
+      transition: 0.3s ease all;
     }
+  }
 
-
-
-
-    nav {
-        font-size: 12px;
-
-
-
-        .enlaces {
-            a {
-                margin-right: 20px;
-            }
-
-        }
-
-
+  .extra {
+    p {
+      font-size: 10px;
+      padding: 0px 20px 0px 20px;
+      transition: 0.3s ease all;
     }
+  }
 
-    footer {
-        p {
-            font-size: 12px;
-        }
+  nav {
+    font-size: 12px;
+
+    .enlaces {
+      a {
+        margin-right: 20px;
+      }
     }
+  }
 
+  footer {
+    p {
+      font-size: 12px;
+    }
+  }
 }
 
-
-
-
 @media screen and (max-width: 450px) {
-
-
-
-    .grid {
-        grid-template-columns: 1fr;
-        width: 100%;
-    }
-
-
-
-
+  .grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
 }

@@ -12,9 +12,9 @@ html {
 
 body {
   background: #ffffff;
-  font-family: 'Roboto', sans-serif;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+  font-family: "Roboto", sans-serif;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
 }
 
 body.dark {
@@ -46,15 +46,15 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   padding: 15px 20px;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(170, 170, 170, 0.16);
           box-shadow: 0px 0px 20px 0px rgba(170, 170, 170, 0.16);
 }
 
 nav .logotipo {
   font-weight: 700;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 nav .enlaces {
@@ -71,7 +71,7 @@ nav .enlaces a {
 }
 
 nav .enlaces a:hover {
-  color: #52A5E0;
+  color: #52a5e0;
 }
 
 body.dark nav {
@@ -85,7 +85,7 @@ body.dark nav a {
 }
 
 .switch {
-  background: #343D5B;
+  background: #343d5b;
   border-radius: 1000px;
   border: none;
   position: relative;
@@ -102,13 +102,13 @@ body.dark nav a {
   width: 50%;
   height: 30px;
   position: absolute;
-  background: #F1F1F1;
+  background: #f1f1f1;
   top: 0;
   left: 0;
   right: unset;
   border-radius: 100px;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
   -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
@@ -207,7 +207,7 @@ body.dark .extra {
 footer {
   background: #ffffff;
   position: absolute;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   bottom: 0;
   width: 100%;
   height: 60px;
@@ -221,8 +221,8 @@ footer {
   display: -ms-flexbox;
   display: flex;
   padding: 15px 20px;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(170, 170, 170, 0.16);
           box-shadow: 0px 0px 20px 0px rgba(170, 170, 170, 0.16);
 }
@@ -255,14 +255,14 @@ body.dark footer p {
     width: 5.6ch;
     -webkit-animation: typing 3s steps(5, end), blink 0.75s step-end infinite;
             animation: typing 3s steps(5, end), blink 0.75s step-end infinite;
-    -webkit-transition: .3s ease all;
-    transition: .3s ease all;
+    -webkit-transition: 0.3s ease all;
+    transition: 0.3s ease all;
   }
   .extra p {
     font-size: 10px;
     padding: 0px 20px 0px 20px;
-    -webkit-transition: .3s ease all;
-    transition: .3s ease all;
+    -webkit-transition: 0.3s ease all;
+    transition: 0.3s ease all;
   }
   nav {
     font-size: 12px;

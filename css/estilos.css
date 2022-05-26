@@ -12,9 +12,9 @@ html {
 
 body {
   background: #ffffff;
-  font-family: 'Roboto', sans-serif;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+  font-family: "Roboto", sans-serif;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
 }
 
 body.dark {
@@ -46,15 +46,15 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   padding: 15px 20px;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(170, 170, 170, 0.16);
           box-shadow: 0px 0px 20px 0px rgba(170, 170, 170, 0.16);
 }
 
 nav .logotipo {
   font-weight: 700;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 nav .enlaces {
@@ -71,7 +71,7 @@ nav .enlaces a {
 }
 
 nav .enlaces a:hover {
-  color: #52A5E0;
+  color: #52a5e0;
 }
 
 body.dark nav {
@@ -85,7 +85,7 @@ body.dark nav a {
 }
 
 .switch {
-  background: #343D5B;
+  background: #343d5b;
   border-radius: 1000px;
   border: none;
   position: relative;
@@ -102,13 +102,13 @@ body.dark nav a {
   width: 50%;
   height: 30px;
   position: absolute;
-  background: #F1F1F1;
+  background: #f1f1f1;
   top: 0;
   left: 0;
   right: unset;
   border-radius: 100px;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
   -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
@@ -139,8 +139,8 @@ body.dark nav a {
 .presentacion h2 {
   font-weight: 200;
   font-size: 42px;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
 }
 
 .presentacion h1 {
@@ -154,8 +154,8 @@ body.dark nav a {
   -webkit-animation: typing 3s steps(6, end), blink 0.75s step-end infinite;
           animation: typing 3s steps(6, end), blink 0.75s step-end infinite;
   overflow: hidden;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
 }
 
 @-webkit-keyframes typing {
@@ -185,14 +185,14 @@ body.dark nav a {
 .presentacion p {
   font-size: 20px;
   padding-bottom: 18px;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
 }
 
 .presentacion .sobremi {
   font-size: 16px;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
 }
 
 body.dark .presentacion {
@@ -236,8 +236,8 @@ body.dark .tecnologias {
   gap: 12px;
   line-height: 24px;
   height: 90px;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
 }
 
 .grid .icon:hover {
@@ -251,7 +251,7 @@ body.dark .tecnologias {
 }
 
 .grid .icon p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   display: block;
   font-size: 16px;
 }
@@ -307,8 +307,8 @@ body.dark .proyectos {
   -webkit-box-shadow: 0px 0px 20px 0px rgba(170, 170, 170, 0.16);
           box-shadow: 0px 0px 20px 0px rgba(170, 170, 170, 0.16);
   border-radius: 10px;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
 }
 
 .griddos .tarjeta p {
@@ -362,8 +362,8 @@ body.dark .proyectos {
   background-color: #ffe3e3;
   border-radius: 0.5rem;
   cursor: pointer;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
 }
 
 .griddos .tarjeta:hover {
@@ -424,8 +424,8 @@ body.dark .titulo-random {
           box-shadow: 0px 0px 20px 0px rgba(170, 170, 170, 0.16);
   padding: 40px 40px 0px 40px;
   width: 500px;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
   border-radius: 10px;
 }
 
@@ -446,11 +446,14 @@ body.dark .formulario-contenedor form:hover {
           box-shadow: 0px 0px 20px 0px rgba(38, 38, 38, 0.16);
 }
 
-.formulario-contenedor form input, .formulario-contenedor form textarea {
+.formulario-contenedor form input,
+.formulario-contenedor form textarea {
   display: block;
 }
 
-.formulario-contenedor #nombre, .formulario-contenedor #email, .formulario-contenedor #mensaje {
+.formulario-contenedor #nombre,
+.formulario-contenedor #email,
+.formulario-contenedor #mensaje {
   margin: 10px 0px 10px;
   width: 100%;
   padding: 15px;
@@ -461,11 +464,13 @@ body.dark .formulario-contenedor form:hover {
           box-shadow: 0px 0px 20px 0px rgba(170, 170, 170, 0.16);
   display: block;
   resize: vertical;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
 }
 
-body.dark .formulario-contenedor #nombre, body.dark .formulario-contenedor #email, body.dark .formulario-contenedor #mensaje {
+body.dark .formulario-contenedor #nombre, body.dark
+.formulario-contenedor #email, body.dark
+.formulario-contenedor #mensaje {
   background: #2f2f2f;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.16);
@@ -473,33 +478,35 @@ body.dark .formulario-contenedor #nombre, body.dark .formulario-contenedor #emai
   color: white;
 }
 
-body.dark .formulario-contenedor #nombre:hover, body.dark .formulario-contenedor #email:hover, body.dark .formulario-contenedor #mensaje:hover {
+body.dark .formulario-contenedor #nombre:hover, body.dark
+.formulario-contenedor #email:hover, body.dark
+.formulario-contenedor #mensaje:hover {
   -webkit-box-shadow: 0px 0px 20px 0px rgba(38, 38, 38, 0.16);
           box-shadow: 0px 0px 20px 0px rgba(38, 38, 38, 0.16);
 }
 
 body.dark .formulario-contenedor ::-webkit-input-placeholder {
   color: #909090;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
 }
 
 body.dark .formulario-contenedor :-ms-input-placeholder {
   color: #909090;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
 }
 
 body.dark .formulario-contenedor ::-ms-input-placeholder {
   color: #909090;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
 }
 
 body.dark .formulario-contenedor ::placeholder {
   color: #909090;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
 }
 
 .formulario-contenedor button {
@@ -508,8 +515,8 @@ body.dark .formulario-contenedor ::placeholder {
   border-radius: 0.5rem;
   border: 1px solid #ffe3e3;
   cursor: pointer;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
   margin: 0px 0px 10px;
   width: 120px;
   height: 30px;
@@ -543,8 +550,8 @@ body.dark .formulario-contenedor button:hover {
   margin: 30px 0px 8px 0px;
   font-family: monospace;
   font-size: 15px;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
 }
 
 .formulario-contenedor .contacto img {
